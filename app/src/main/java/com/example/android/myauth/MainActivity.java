@@ -1,7 +1,10 @@
 package com.example.android.myauth;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -85,7 +88,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     {
         if(view == buttonRegister)
         {
+            ConnectivityManager cm =
+                    (ConnectivityManager)getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+
+            NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+            boolean isConnected = activeNetwork != null &&
+                    activeNetwork.isConnectedOrConnecting();
+            if(isConnected)
             registerUser();
+            else
+                Toast.makeText(MainActivity.this,"Internet Access Required",Toast.LENGTH_SHORT).show();
+
         }
         if(view == textViewSignin)
         {
