@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "675477772940",
+    "firebase_url": "https://myauth-8ae33.firebaseio.com",
+    "project_id": "myauth-8ae33",
+    "storage_bucket": "myauth-8ae33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675477772940:android:65d9a6468110d38d",
+        "android_client_info": {
+          "package_name": "com.example.android.myauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675477772940-3m7vcmonmuvubudn7p8p3v5lm1q01nph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByxy_by3hqXlAK2NQGWlnShciWJnw0F3s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
